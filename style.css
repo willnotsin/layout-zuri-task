@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+  padding: 1px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.flex_body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.flex_main {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  flex-direction: column;
+}
+
+.content {
+  border-radius: 5px;
+  /* background-color: aqua; */
+  width: 50em;
+  font-size: 15px;
+  display: flex;
+  font-weight: 400;
+}
+
+.first {
+  background-color: hsl(31, 77%, 52%);
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 33.33%;
+  padding: 2em;
+  border-radius: 10px 0 0 10px;
+}
+
+.second {
+  background-color: hsl(184, 100%, 22%);
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 33.33%;
+  padding: 2em;
+}
+
+.third {
+  background-color: hsl(179, 100%, 13%);
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 33.33%;
+  padding: 2em;
+  border-radius: 0 10px 10px 0;
+}
+
+h2 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 38px;
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  margin-top: 5em;
+  width: 75%;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.5ms;
+}
+
+button:hover {
+  background-color: rgba(95, 158, 160, 0);
+  border: 2px solid white;
+}
+
+.first button {
+  color: hsl(31, 77%, 52%);
+}
+
+.first button:hover {
+  color: #f2f2f2;
+}
+
+.second button {
+  color: hsl(184, 100%, 22%);
+}
+
+.second button:hover {
+  color: #f2f2f2;
+}
+
+.third button {
+  color: hsl(179, 100%, 13%);
+}
+
+.third button:hover {
+  color: #f2f2f2;
+}
+footer {
+  position: relative;
+  width: 100%;
+  height: 5vh;
+  background-color: whitesmoke;
+  /* padding: 10px; */
+  text-align: end;
+}
+.grid p {
+  font-size: 15px;
+}
+.grid a {
+  text-decoration: none;
+  color: rgb(231, 85, 17);
+  transition: 1ms;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* ---------------Grid layout task-------------------- */
+header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 5vh;
+  background-color: whitesmoke;
+  padding: 10px;
+  text-align: start;
+}
+.flex p {
+  font-size: 15px;
+}
+.flex a {
+  text-decoration: none;
+  color: rgb(231, 85, 17);
+  transition: 1ms;
+}
+a:hover {
+  text-decoration: underline;
+}
+.grid_body {
+  background-color: hsl(0, 0%, 95%);
+  display: block;
+  place-items: center;
+  height: 100vh;
+}
+
+.grid_main {
+  display: grid;
+  height: 75vh;
+  margin: auto;
+  width: 75%;
+  grid-template-areas:
+    "a a a c "
+    "a a a c "
+    "d d b b "
+    "d d e e ";
+  gap: 20px;
+  background-color: hsl(231, 21%, 13%);
+  padding: 20px;
+  padding-right: 10em; 
+  margin-top: 10vh;
+}
+
+.grid_main div {
+  padding: 2em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.a_grid {
+  background-color: hsla(14, 80%, 63%, 0.952);
+  grid-area: a;
+}
+
+.b_grid {
+  background-color: hsl(199, 66%, 64%);
+  grid-area: b;
+}
+
+.c_grid {
+  background-color: hsl(64, 77%, 68%);
+  grid-area: c;
+}
+
+.d_grid {
+  background-color: hsl(142, 94%, 34%);
+  grid-area: d;
+}
+
+.e_grid {
+  background-color: hsl(187, 73%, 58%);
+  color: aliceblue;
+  grid-area: e;
+}
